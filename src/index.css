@@ -1,0 +1,19 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+    @apply font-sans antialiased;
+  }
+}
+
+@layer utilities {
+  .line-through-transition {
+    text-decoration-thickness: 2px;
+    transition: text-decoration-color 0.2s ease;
+  }
+}
